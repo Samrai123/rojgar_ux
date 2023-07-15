@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "686642890891",
+    "project_id": "rojgar-e7c30",
+    "storage_bucket": "rojgar-e7c30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686642890891:android:f1c198459a44f00903ec8e",
+        "android_client_info": {
+          "package_name": "com.example.rojgar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686642890891-k9sbg5nt692dm6vc6ie88vf7s59k0uch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMg1RbW9aJ6FkYSDbG_mn0LrixDTTu_ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686642890891-k9sbg5nt692dm6vc6ie88vf7s59k0uch.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "686642890891-l1hqv4uesfh2jcoiilmrc6g3pnbhgan8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rojgar.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686642890891:android:d7ae3f78b6c9113203ec8e",
+        "android_client_info": {
+          "package_name": "com.sam.sam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686642890891-k9sbg5nt692dm6vc6ie88vf7s59k0uch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMg1RbW9aJ6FkYSDbG_mn0LrixDTTu_ic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686642890891-k9sbg5nt692dm6vc6ie88vf7s59k0uch.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "686642890891-l1hqv4uesfh2jcoiilmrc6g3pnbhgan8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.rojgar.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
