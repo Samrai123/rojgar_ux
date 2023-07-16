@@ -8,7 +8,7 @@ import '../../app/controller.dart';
 import '../home/data.dart';
 
 class SaveJobs extends StatefulWidget {
-  const SaveJobs({super.key});
+  SaveJobs({super.key});
 
   @override
   State<SaveJobs> createState() => _SaveJobsState();
@@ -30,72 +30,70 @@ class _SaveJobsState extends State<SaveJobs> {
             color: Colors.black,
           ),
         ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.arrow_back_ios,
-            size: 20,
-            color: Colors.black,
-          ),
-        ),
+        // leading: GestureDetector(
+        //   onTap: () {
+        //     Navigator.pop(context);
+        //   },
+        //   child: Icon(
+        //     Icons.arrow_back_ios,
+        //     size: 20,
+        //     color: Colors.black,
+        //   ),
+        // ),
       ),
       body: Padding(
         padding: EdgeInsets.only(left: 10, right: 10, top: 10),
-        child: Obx(
-          () => SingleChildScrollView(
-            child: Column(
-              children: [
-                Padding(
-                  padding: EdgeInsets.symmetric(horizontal: 32),
-                  child: Container(
-                    height: 60,
-                    decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 122, 117, 114),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: TextButton(
-                            style: TextButton.styleFrom(),
-                            child: Text(
-                              "Saved",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 18),
-                            ),
-                            onPressed: () {},
-                          ),
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 32),
+              child: Container(
+                height: 60,
+                decoration: BoxDecoration(
+                  color: Color.fromARGB(255, 122, 117, 114),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: TextButton(
+                        style: TextButton.styleFrom(),
+                        child: Text(
+                          "Saved",
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
-                        Expanded(
-                          child: TextButton(
-                            style: TextButton.styleFrom(
+                        onPressed: () {},
+                      ),
+                    ),
+                    Expanded(
+                      child: TextButton(
+                        style: TextButton.styleFrom(
 
-                                // Background color
-                                ),
-                            child: Text(
-                              "Applied",
-                              style:
-                                  TextStyle(color: Colors.white, fontSize: 18),
+                            // Background color
                             ),
-                            onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  CupertinoPageRoute(
-                                    builder: (context) => ApplyJobs(),
-                                  ));
-                            },
-                          ),
+                        child: Text(
+                          "Applied",
+                          style: TextStyle(color: Colors.white, fontSize: 18),
                         ),
-                      ],
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              CupertinoPageRoute(
+                                builder: (context) => ApplyJobs(),
+                              ));
+                        },
+                      ),
                     ),
-                  ),
+                  ],
                 ),
-                SizedBox(
-                  height: 20,
-                ),
-                SizedBox(
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Obx(
+              () => SingleChildScrollView(
+                child: SizedBox(
                   height: MediaQuery.of(context).size.height * 0.65,
                   child: ListView.builder(
                     itemCount: controller.job.length,
@@ -107,9 +105,9 @@ class _SaveJobsState extends State<SaveJobs> {
                     },
                   ),
                 ),
-              ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );

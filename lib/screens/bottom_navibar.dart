@@ -19,11 +19,15 @@ class BottomNavigationBarScreen extends StatefulWidget {
 }
 
 class _BottomNavigationBarScreenState extends State<BottomNavigationBarScreen> {
+  void initState() {
+    super.initState();
+  }
+
   int _selectedIndex = 0;
 
   List<Widget> lstWidget = [
     Master(),
-    const SaveJobs(),
+    SaveJobs(),
     const AlertScreen(),
     ProfileScreen()
   ];

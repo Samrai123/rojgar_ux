@@ -31,16 +31,16 @@ class _AlertScreenState extends State<AlertScreen> {
             color: Colors.black,
           ),
         ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.arrow_back_ios,
-            size: 20,
-            color: Colors.black,
-          ),
-        ),
+        // leading: GestureDetector(
+        //   onTap: () {
+        //     Navigator.pop(context);
+        //   },
+        //   child: Icon(
+        //     Icons.arrow_back_ios,
+        //     size: 20,
+        //     color: Colors.black,
+        //   ),
+        // ),
       ),
       body: Padding(
         padding: EdgeInsets.only(left: 10, right: 10, top: 10),

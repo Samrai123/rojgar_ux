@@ -9,14 +9,14 @@ import 'package:rojgar/widgets/header_widge.dart';
 import 'package:rojgar/widgets/snackbar.dart';
 import 'package:rojgar/widgets/theme_helper.dart';
 
-class CreateProfileScreen extends StatefulWidget {
-  const CreateProfileScreen({super.key});
+class EditProfileScreen extends StatefulWidget {
+  const EditProfileScreen({super.key});
   static const String route = "registerScreen";
   @override
-  State<CreateProfileScreen> createState() => _CreateProfileScreenState();
+  State<EditProfileScreen> createState() => _EditProfileScreenState();
 }
 
-class _CreateProfileScreenState extends State<CreateProfileScreen> {
+class _EditProfileScreenState extends State<EditProfileScreen> {
   // @override
   // void initState() {
   //   super.initState();
@@ -94,7 +94,7 @@ class _CreateProfileScreenState extends State<CreateProfileScreen> {
         elevation: 0,
         centerTitle: true,
         title: Text(
-          'Create Profile',
+          'Edit Profile',
           style: TextStyle(
             color: Colors.black,
           ),
@@ -306,7 +306,7 @@ class _CreateProfileScreenState extends State<CreateProfileScreen> {
                             ),
                             onPressed: () {},
                             child: Text(
-                              "Create Account",
+                              "Edit Profile",
                               style: kButtonText.copyWith(color: Colors.white),
                             ),
                           ),

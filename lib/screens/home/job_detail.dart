@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_flushbar/flutter_flushbar.dart';
 import 'package:get/get.dart';
 
 import 'package:rojgar/screens/home/data.dart';
 
 import '../../app/controller.dart';
+import '../../widgets/snackbar.dart';
 
 class JobDetail extends StatelessWidget {
   final Job job;
@@ -142,6 +144,28 @@ class JobDetail extends StatelessWidget {
                     child: IconButton(
                       onPressed: () {
                         jobController.addJob(job);
+                        Flushbar(
+                          flushbarPosition: FlushbarPosition.TOP,
+                          backgroundColor: Colors.green,
+                          duration: Duration(seconds: 3),
+                          titleText: Center(
+                            child: Text(
+                              "You have successfuly saved the job",
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18.0,
+                                  color: Colors.white,
+                                  fontFamily: "ShadowsIntoLightTwo"),
+                            ),
+                          ),
+                          messageText: Text(
+                            "",
+                            style: TextStyle(
+                                fontSize: 0.0,
+                                color: Colors.white,
+                                fontFamily: "ShadowsIntoLightTwo"),
+                          ),
+                        ).show(context);
                       },
                       icon: Icon(
                         Icons.bookmark_add_outlined,
@@ -166,6 +190,28 @@ class JobDetail extends StatelessWidget {
                       child: TextButton(
                         onPressed: () {
                           applyController.addJob(job);
+                          Flushbar(
+                            flushbarPosition: FlushbarPosition.TOP,
+                            backgroundColor: Colors.green,
+                            duration: Duration(seconds: 3),
+                            titleText: Center(
+                              child: Text(
+                                "You have successfuly applied for the job",
+                                style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18.0,
+                                    color: Colors.white,
+                                    fontFamily: "ShadowsIntoLightTwo"),
+                              ),
+                            ),
+                            messageText: Text(
+                              "",
+                              style: TextStyle(
+                                  fontSize: 0.0,
+                                  color: Colors.white,
+                                  fontFamily: "ShadowsIntoLightTwo"),
+                            ),
+                          ).show(context);
                         },
                         child: Text(
                           "Apply Now",

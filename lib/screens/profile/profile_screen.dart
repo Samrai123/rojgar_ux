@@ -18,16 +18,16 @@ class ProfileScreen extends StatelessWidget {
             color: Colors.black,
           ),
         ),
-        leading: GestureDetector(
-          onTap: () {
-            Navigator.pop(context);
-          },
-          child: Icon(
-            Icons.arrow_back_ios,
-            size: 20,
-            color: Colors.black,
-          ),
-        ),
+        // leading: GestureDetector(
+        //   onTap: () {
+        //     Navigator.pop(context);
+        //   },
+        //   child: Icon(
+        //     Icons.arrow_back_ios,
+        //     size: 20,
+        //     color: Colors.black,
+        //   ),
+        // ),
       ),
       body: Body(),
     );
